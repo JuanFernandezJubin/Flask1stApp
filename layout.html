@@ -1,0 +1,16 @@
+<!--Para empezar con html, ingresar el codigo dentro de las " " del return
+y utilzando el """ """ mencionas que vas a regresar varias lineas.
+<head> donde nos encargamos de la parte visual: hojas de estilo,
+css y javascript.
+<body>la informacion que le vamos a desplegar al usuario.-->
+<!doctype html>
+      <html>
+          <head>
+              <title>{% block title %}{% endblock %}</title>
+              <link rel="sylesheet" href="/static/styles.css">
+          </head>
+          <body>
+              {% block content %}{% endblock %}
+              <p>Derechos reservados</p>
+          </body>
+      </html>

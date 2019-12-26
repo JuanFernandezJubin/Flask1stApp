@@ -1,0 +1,9 @@
+<!-- extends se usa para heredar el tamplate, en este caso, desde nuestro
+layout.html que es el esquema madre -->
+{% extends "layout.html" %}
+
+{% block title %}Sumadora{% endblock %}
+
+{% block content %}
+  <h1>{{num1}} + {{num2}} = {{num1 + num2}}</h1>
+{% endblock %}
